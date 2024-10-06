@@ -20,6 +20,24 @@
   justify-content: space-evenly;
 }
 .button {
+  background: #35241c;
+  color: #ffffff;
+  border: 1px solid #35241c;
+  width: 210px;
+  height: 50px;
+  border-radius: 6px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 10px;
+  text-align: center;
+  box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.5), 2px 0px 0px rgba(0, 0, 0, 0.5);
+  cursor: not-allowed;
+}
+
+.reward-button {
+  cursor: pointer;
+  font-weight: 700;
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -28,34 +46,20 @@
     #ec6615 77%,
     #944617 100%
   );
-  border: 1px solid #35241c;
-  width: 210px;
-  height: 50px;
-  border-radius: 6px;
   color: #35241c;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 10px;
-  text-align: center;
-  box-shadow: -2px 2px 0px rgba(0, 0, 0, 0.5), 2px 0px 0px rgba(0, 0, 0, 0.5);
-  cursor: not-allowed;
   animation: bounce 1s infinite;
   transition: all 200ms;
 }
 @keyframes bounce {
   0%,
   100% {
-    opacity: 1; /* Fully visible */
+    opacity: 1;
   }
   50% {
-    opacity: 0.8; /* Invisible */
+    opacity: 0.8;
   }
 }
-.button:hover {
+.reward-button:hover {
   transform: scale(1.05);
   transition: all 200ms;
-}
-
-.reward-button {
-  cursor: pointer;
 }

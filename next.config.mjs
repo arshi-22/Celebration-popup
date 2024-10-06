@@ -2,9 +2,9 @@
 const nextConfig = {
   output: "export",
   basePath: "/Celebration-popup",
-  images: {
-    unoptimized: true,
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
   trailingSlash: true,
 };
 

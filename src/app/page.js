@@ -14,9 +14,15 @@ const HomePage = () => {
   return !showPopup ? (
     <div className="container">
       <div className="buttons">
-        <button className="button">Continue</button>
-        <button className="button">New Game</button>
-        <button className="button">Exit</button>
+        <button className="button" disabled>
+          Continue
+        </button>
+        <button className="button" disabled>
+          New Game
+        </button>
+        <button className="button" disabled>
+          Exit
+        </button>
         <button className="button reward-button" onClick={handleRewards}>
           Rewards
         </button>
