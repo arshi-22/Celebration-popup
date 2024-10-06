@@ -12,7 +12,7 @@
   min-width: 300px;
   min-height: 500px;
   background: linear-gradient(180deg, rgba(22, 24, 30, 0) 41.53%, #000000 100%),
-    url("/rewards_BG.svg");
+    url("../../../../public/rewards_BG.svg");
   padding: 2rem;
   object-fit: cover;
   border-radius: 1rem;
@@ -106,7 +106,7 @@
   gap: 1.5rem;
 }
 .reward {
-  background-image: url("/xp_border.svg");
+  background-image: url("../../../../public/xp_border.svg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 120px;
@@ -181,7 +181,7 @@
   cursor: pointer;
   transition: all 200ms;
 }
-.claim-rewards:hover{
+.claim-rewards:hover {
   transform: scale(1.05);
   transition: all 200ms;
 }

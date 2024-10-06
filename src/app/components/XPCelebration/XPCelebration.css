@@ -11,7 +11,7 @@
   z-index: 50;
   width: 100%;
   height: 100%;
-  background-image: url("/level_up_BG.svg");
+  background-image: url("../../../../public/level_up_BG.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -72,6 +72,7 @@
   font-weight: 700;
   line-height: 51px;
   text-align: left;
+  margin-top: 1rem;
 }
 .xpBar-wrap {
   width: 653px;
@@ -94,7 +95,7 @@
   font-size: 12px;
 }
 .xp-bar {
-  background-image: url("/xp_bar.svg");
+  background-image: url("../../../../public/xp_bar.svg");
 
   overflow: hidden;
   height: 22px;
@@ -243,7 +244,7 @@
   }
   .corporal {
     font-size: 45px;
-    margin-top:2.5rem
+    margin-top: 2.5rem;
   }
   .xpBar-range {
     font-size: 15px;
