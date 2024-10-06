@@ -44,20 +44,20 @@ export default function XPCelebration({ closeAllModals }) {
         </div>
         <h2 className="corporal">Corporal</h2>
         <div className="xpBar-wrap">
-        <div className="xpBar-range">
-          <span className="xp-value"> 34,500</span>
-          <span>50,000</span>
+          <div className="xpBar-range">
+            <span className="xp-value"> 34,500</span>
+            <span>50,000</span>
+          </div>
+          <div className="xp-bar">
+            <motion.div
+              className="xp-fill"
+              initial={{ width: "0%" }}
+              animate={{ width: `${xpPercent}%` }}
+              transition={{ duration: 2 }}
+            />
+          </div>
         </div>
-        <div className="xp-bar">
-          <motion.div
-            className="xp-fill"
-            initial={{ width: "0%" }}
-            animate={{ width: `${xpPercent}%` }}
-            transition={{ duration: 2 }}
-          />
-        </div>
-        </div>
-        
+
         <motion.button className="claim-button" whileTap={{ scale: 0.95 }}>
           Claim NFT Badge
         </motion.button>

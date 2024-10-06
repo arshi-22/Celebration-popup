@@ -1,9 +1,4 @@
 .popup-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+  min-height: 100vh;
 }
 
 .level-up {
@@ -72,7 +68,7 @@
   font-weight: 700;
   line-height: 51px;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .xpBar-wrap {
   width: 653px;
@@ -103,7 +99,6 @@
   left: 634px;
   gap: 0px;
   border-radius: 4px;
-  opacity: 0px;
 }
 
 .xp-fill {
@@ -234,8 +229,7 @@
 @media only screen and (max-width: 320px) {
   .level-up {
     font-weight: 800;
-    font-size: 49px;
-    color: #f3ba2f;
+    font-size: 45px;
     margin-top: 1.5rem;
   }
   .badge {
@@ -245,6 +239,7 @@
   .corporal {
     font-size: 45px;
     margin-top: 2.5rem;
+    margin-bottom: 0px;
   }
   .xpBar-range {
     font-size: 15px;
@@ -261,8 +256,15 @@
     margin-top: 2rem;
   }
   .leveled-up {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 0;
+  }
+  .claim-badge {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .NFT-badge {
+    font-size: 13px;
   }
   .small-text {
     width: 268px;

@@ -7,13 +7,11 @@ import RewardsCelebration from "./components/Rewards/RewardsCelebration";
 const HomePage = () => {
   const [showPopup, setShowPopup] = useState(false);
 
-  
-
   const handleRewards = () => {
     setShowPopup(true);
   };
 
-  return (
+  return !showPopup ? (
     <div className="container">
       <div className="buttons">
         <button className="button">Continue</button>
@@ -23,10 +21,9 @@ const HomePage = () => {
           Rewards
         </button>
       </div>
-      {showPopup && (
-        <RewardsCelebration setShowPopup={setShowPopup} />
-      )}
     </div>
+  ) : (
+    <RewardsCelebration setShowPopup={setShowPopup} />
   );
 };
 
